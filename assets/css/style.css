@@ -1,1 +1,38 @@
+.contacts-header {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.contacts-header__item {
+  display: inline-block;
+}
+.contacts-header__item i {
+  margin-right: 10px;
+}
+.contacts-header .item-location p {
+  margin-bottom: 0;
+}
 
+.about-section__content {
+  display: flex;
+}
+.about-section__content__item {
+  width: 50%;
+}
+
+.fas--pink {
+  color: #E94671;
+}
+
+.btn {
+  width: 200px;
+  height: 71px;
+}
+.btn--pink {
+  background-color: #E94671;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
