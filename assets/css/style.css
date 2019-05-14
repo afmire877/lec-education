@@ -1,3 +1,7 @@
+body {
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+}
+
 .contacts-header {
   height: 50px;
   display: flex;
@@ -15,21 +19,76 @@
   margin-bottom: 0;
 }
 
+.about-section {
+  background-color: #F2F2F2;
+}
 .about-section__content {
   display: flex;
 }
 .about-section__content__item {
   width: 50%;
+  margin-top: 120px;
+  margin-bottom: 108px;
+}
+
+@media screen and (max-width: 768px) {
+  .col-sm {
+    text-align: center;
+    margin: 25px 0;
+  }
+}
+.container-fluid {
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+.social-proof h3 {
+  text-align: center;
+  padding: 60px;
+}
+.social-proof__logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.class-cards {
+  background-color: #F2F2F2;
+  width: 100vw;
+  padding-bottom: 100px;
+}
+.class-cards__title {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 32px;
+  padding: 30px;
+}
+.class-cards__desc {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.class-cards__container {
+  display: flex;
+  justify-content: center;
+}
+.class-cards__card {
+  margin-left: 15px;
+  width: 247.86px;
+  height: 230px;
+  border-radius: 5px;
+  background: url("../../assets/images/child.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fas--pink {
   color: #E94671;
 }
 
-.btn {
-  width: 200px;
-  height: 71px;
-}
 .btn--pink {
   background-color: #E94671;
   color: white;
