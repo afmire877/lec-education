@@ -1,3 +1,7 @@
+html {
+  font: normal 1rem itc-avant-garde-gothic-pro, sans-serif;
+}
+
 body {
   font-family: itc-avant-garde-gothic-pro, sans-serif;
 }
@@ -30,6 +34,9 @@ body {
   margin-top: 120px;
   margin-bottom: 108px;
 }
+.about-section__content__item__text {
+  padding: 50px;
+}
 
 @media screen and (max-width: 768px) {
   .col-sm {
@@ -42,6 +49,9 @@ body {
   padding-right: 65px;
 }
 
+.social-proof {
+  margin-bottom: 60px;
+}
 .social-proof h3 {
   text-align: center;
   padding: 60px;
@@ -61,7 +71,7 @@ body {
   text-align: center;
   margin-top: 60px;
   margin-bottom: 32px;
-  padding: 30px;
+  padding: 60px 0 30px 0;
 }
 .class-cards__desc {
   font-size: 15px;
@@ -71,6 +81,7 @@ body {
 .class-cards__container {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .class-cards__card {
   margin-left: 15px;
@@ -83,6 +94,46 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.testimonials h2 {
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  position: relative;
+  margin: 30px 0 60px;
+}
+
+.img-box {
+  height: 40px;
+  width: 40px;
+  border: 1px solid red;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 auto 20px auto;
+}
+
+.overview {
+  font-style: italic;
+}
+
+.carousel {
+  margin: 50px auto;
+  padding: 0 70px;
+}
+.carousel-indicators li {
+  font-size: 2rem;
+  color: yellow;
+  margin-top: 10px;
+}
+.carousel-item {
+  text-align: center;
+}
+.carousel-control {
+  color: yellow;
+  font-size: 3rem;
 }
 
 .fas--pink {

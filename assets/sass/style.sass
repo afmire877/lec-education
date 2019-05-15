@@ -9,7 +9,8 @@ $fontFamily: itc-avant-garde-gothic-pro, sans-serif
 
 
 
-
+html
+	font: normal 1rem $fontFamily
 
 // Layout Styles
 body
@@ -27,16 +28,26 @@ body
 			margin-right: 10px
 	.item-location p
 		margin-bottom: 0
+// nav
+// 	z-index: 1
+// // .slideshow
+// // 	position: absolute
+// // 	top: 50px
+// // 	left: 0
 
-
+// // .slideshow--clearfix
+// // 	height: 383.265px
 .about-section
 	background-color: $lightGrey
 	&__content
 		display: flex
-	&__content__item 
+	&__content__item
 		width: 50%
 		margin-top: 120px
 		margin-bottom: 108px
+		&__text
+			padding: 50px	
+
 
 
 
@@ -51,6 +62,7 @@ body
 	padding-right: 65px
 
 .social-proof
+	margin-bottom: 60px
 	h3
 		text-align: center
 		padding: 60px
@@ -61,6 +73,7 @@ body
 
 
 .class-cards
+	// height: 600px
 	background-color: $lightGrey
 	width: 100vw
 	padding-bottom: 100px
@@ -68,7 +81,7 @@ body
 		text-align: center
 		margin-top: 60px
 		margin-bottom: 32px
-		padding: 30px
+		padding: 60px 0 30px 0
 	&__desc
 		font-size: 15px
 		text-align: center
@@ -77,6 +90,7 @@ body
 		@media screen and (max-width: 768px)
 		display: flex
 		justify-content: center
+		align-items: center
 	&__card
 		margin-left: 15px
 		width: 247.86px
@@ -89,8 +103,38 @@ body
 		align-items: center
 		justify-content: center
 		
+.testimonials h2 
+	color: #333
+	text-align: center
+	text-transform: uppercase
+	font-family: "Roboto", sans-serif
+	font-weight: bold
+	position: relative
+	margin: 30px 0 60px
+.img-box
+	height: 40px
+	width: 40px
+	border: 1px solid red
+	border-radius: 50%
+	display: inline-block
+	margin: 0 auto 20px auto
 
+.overview
+	font-style: italic
 
+.carousel
+	margin: 50px auto
+	padding: 0 70px
+	&-indicators li
+		font-size: 2rem 
+		color: yellow
+		margin-top: 10px
+		b
+	&-item
+		text-align: center
+	&-control
+		color: yellow
+		font-size: 3rem
 
 
 
