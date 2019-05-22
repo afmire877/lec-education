@@ -16,6 +16,8 @@ html
 body
 	font-family: $fontFamily
 
+
+
 .contacts-header
 	height: 50px
 	display: flex
@@ -24,19 +26,34 @@ body
 	justify-content: space-around
 	&__item
 		display: inline-block
+		a
+			color: black
+			text-decoration: none
+			&:hover
+				color: $pink
 		i 
 			margin-right: 10px
 	.item-location p
 		margin-bottom: 0
-// nav
-// 	z-index: 1
-// // .slideshow
-// // 	position: absolute
-// // 	top: 50px
-// // 	left: 0
 
-// // .slideshow--clearfix
-// // 	height: 383.265px
+.carousel
+	&-caption
+		top: 50%
+		font-size: 1rem
+		h5 
+			font-size: 3.25rem
+			text-transform: uppercase
+	&-indicators li
+		border-radius: 50%
+		font-size: 2rem 
+		background-color: $pink
+		height: 10px
+		width: 10px
+
+	
+
+header.navbar.navbar-dark
+	color: rgba(255,255,255,.9)
 .about-section
 	background-color: $lightGrey
 	&__content
@@ -60,7 +77,16 @@ body
 .container-fluid
 	padding-left: 65px
 	padding-right: 65px
-
+.container
+	&-cta 
+		background-color: $pink
+		padding: 0 120px 0 120px
+		text-align: center
+		align-items: center
+.cta
+	h3, p
+		color: white
+	padding: 120px
 .social-proof
 	margin-bottom: 60px
 	h3
@@ -82,6 +108,7 @@ body
 		margin-top: 60px
 		margin-bottom: 32px
 		padding: 60px 0 30px 0
+
 	&__desc
 		font-size: 15px
 		text-align: center
@@ -92,16 +119,38 @@ body
 		justify-content: center
 		align-items: center
 	&__card
+		color: white
 		margin-left: 15px
 		width: 247.86px
 		height: 230px
 		border-radius: 5px
-		background: url('../../assets/images/child.jpeg')
 		background-repeat: no-repeat
 		background-size: cover
 		display: flex
 		align-items: center
 		justify-content: center
+		overflow: hidden
+		&:hover > img 
+			opacity: 1
+		&--gcse
+			background-color: #fecaca
+		&--primary
+			background-color: #fecaca
+		&--alevel
+			background-color: #fecaca
+
+		&--sats
+			background-color: #fecaca
+
+	&__card > img 
+		position: absolute
+		height: 230px
+		opacity: 0.7
+
+	&__card > a
+		z-index: 10
+
+		// transform: translateY(145px)
 		
 .testimonials h2 
 	color: #333
@@ -122,36 +171,153 @@ body
 .overview
 	font-style: italic
 
-.carousel
+.testimonals-carousel
 	margin: 50px auto
 	padding: 0 70px
+	&-indicators
+		bottom: -50px
 	&-indicators li
+		// margin-top: 50px
+		border-radius: 50%
 		font-size: 2rem 
-		color: yellow
-		margin-top: 10px
-		b
+		background-color: $pink
+		height: 10px
+		width: 10px
 	&-item
 		text-align: center
 	&-control
 		color: yellow
 		font-size: 3rem
+		&-next, &-prev
+			color: #535050
+		&-next:hover, &-prev:hover
+			color: $pink
+
+
+.blog
+	&-excerpt
+		font-size: .8rem
+		font-weight: 300
+	&-section-title
+		margin-bottom: 41px
+		margin-top: 62px
+	&-section__item
+		background-color: $lightpink
+		border-radius: 5px
+		padding: 23px
+		margin-bottom: 18px 
+
+.event-section
+	&__item__date
+		background: $pink
+		display: inline-block
+		border-radius: 50%
+		height: 65px
+		min-width: 65px
+		position: relative
+		text-align: center
+		color: white
+		margin-right: 10px
+	&__item__date .date 
+		margin-bottom: 5px
+		margin-top: 5px
+	&__item__date .month
+		font-weight: bold
+	&__item
+		display: flex
+		margin-bottom: 75px
+		&:nth-last-child(2)
+			margin-bottom: 42px
+	&-title
+		margin-top: 62px
+		margin-bottom: 41px
+.event-excerpt
+	font-size: 0.8rem
+	font-weight: 300
 
 
 
 
-
+footer 
+	background: #212147
+	color: white
+	list-style: none
+	h4 
+		font-size: 0.95rem
+	.footer__item
+		padding: 0px 10px 0px 10px
+		ul li a
+			text-decoration: none
+			color: white
+			&:hover
+				color: $lightpink
+	.contact-info
+		&__item > a 
+			text-decoration: none
+			color: white
+			&:hover
+				color: $pink
+	.socials
+		&__item
+			margin-top: 28px
+		&__item > *
+			margin-right: 27px
+			font-size: 20px
+			&:hover
+				color: $pink
+				cursor: pointer
+	.container
+		display: flex
+		justify-content: space-between
+		padding: 100px 40px 40px 40px
+		ul 
+			font-size: 0.8rem
+			font-weight: 300
+			list-style: none
+			padding-left: 0
 
 
 // navigation Styles
-
 .fas--pink
 	color: $pink
+.navbar.fixed-top
+	top: 50px
+.fa-phone
+	transform: rotateY(180deg)
 
+.navbar
+	&--white
+		background-color: white
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		z-index: 10
+
+	&-nav 
+		color: $pink
 
 
 // Button Styles
 .btn
+	font-weight: 300
 	&--pink
 		background-color: $pink
 		color: white
+
+
+	&-cta
+		font-size: 0.8rem
+		background-color: #E94671
+		color: white !important
+		border: none
+		font-weight: 300
+		padding: 18px
+		border-radius: 25px
+	&-default
+		display: block
+		margin: 0 auto 50px auto
+		border: 1px solid $pink
+.animated
+	opacity: 0
 

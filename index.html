@@ -2,11 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.typekit.net/ifh1hkm.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+
 </head>
 <body>
 
@@ -25,24 +31,26 @@
 					</div>
 				</div>
 			</div>
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 				<div class="container">
-				  <a class="navbar-brand" href="#">
-				  	<img src="assets/images/logo.png" width="114.02" height="56.62">
+				  <a class="navbar-brand d-flex w-25 order-0" href="#">
+				  	<img id='header_logo' src="assets/images/logo.png" width="114.02" height="56.62">
 				  </a>
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
 				  </button>
-				  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				    <div class="navbar-nav">
+				  <div class="collapse navbar-collapse justify-content-center order-2" id="navbarNavAltMarkup">
+
+				    <div class="navbar-nav justify-content-center">
 				      <a class="nav-item nav-link" href="#">About</a>
 				      <a class="nav-item nav-link" href="#">Classes</a>
 				      <a class="nav-item nav-link" href="#">Enrol</a>
 				      <a class="nav-item nav-link" href="#">Work with Us</a>
 				      <a class="nav-item nav-link" href="#">Events</a>
 				    </div>
-				    <div class="btn btn-cta--white">Book a Free Assessment</div>
+				      <a class="btn  btn-cta ml-auto">Book a Free Assessment</a>
 				  </div>
+
 				</div>
 			</nav>
 		</header>
@@ -50,7 +58,7 @@
 		<main>
 
 			<div class="slideshow">
-			  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+			  <div id="carouselExampleIndicators" class=" carousel  slide" data-ride="carousel">
 			    <ol class="carousel-indicators">
 			      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
 			      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -90,169 +98,215 @@
 			  </div>
 			 </div>
 
-
-			<div class="container">
-				<section class="about-section">
-					<div class="about-section__content">
-						<div class="about-section__content__item">
-							<h1>About</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam repellat molestiae similique ullam labore soluta, autem, placeat officia perferendis dolore?</p>
-							<button class="btn btn--pink">learn more</button>
+				<section class="about-section animated container-fluid ">
+					<div class="container">
+					<div class="about-section__content row">
+							<div class="about-section__content__item about-section__content__item__text col-sm">
+								<h1>About</h1>
+								<p>We are a vibrant friendly tuition centre in London where we inspire, educate and motive children, helping them to excel and build confidence in the core subjects of Maths, Science and English.
+								Our highly qualified tutors use besboke and expertly designed teaching material following the national curriculum to teach each child based on their individual learning plan. We deliberately keep our class sizes small, with only 4 students in each class, our children have plenty of opportunity not only to learn but develop 
+								</p>
+								<button class="btn btn--pink">learn more</button>
+							</div>
+							<div class="about-section__content__item about-section__content__item__image col-sm">
+								<img  class= "img-thumbnail" src="assets/images/child.jpeg" alt="">
+							</div>
 						</div>
-						<div class="about-section__content__item">
-							<img  class= "img-thumbnail" src="assets/images/child.jpeg" alt="">
-						</div>
-
 					</div>
 				</section>
-
+			<div class="container">
 				<section class="social-proof">
 					<h3>We work in association with: </h3>
 					<div class="social-proof__logos">
 						<img src="assets/images/edexcel-logo.png" alt="">
+						<img src="assets/images/pearson-logo.png" alt="">
 						<img src="assets/images/aqa-logo.png" alt="">
 						<img src="assets/images/wjec-logo.png" alt="">
-						<img src="assets/images/ofsted-logo.png" alt="">
-						<img src="assets/images/pearson-logo.png" alt="">
+						<img src="assets/images/ofsted-logo.png" alt="">	
+
 					</div>
 
 				</section>
+			</div>
 
-				<section class="class-cards">
-					<h2 class="class-cards__title">Classes<h2>
-					<div class="class-cards__container" >
-						<div class="class-cards__card">
-							<h4 class="card-title">Primary</h4>
-						</div>
-						<div class="class-cards__card">
-							<h4 class="card-title">Secondary</h4>
-						</div>
-						<div class="class-cards__card">
-							<h4 class="card-title">GCSE</h4>
-						</div>
-						<div class="class-cards__card">
-							<h4 class="card-title">A-levels</h4>
+				<section class="class-cards animated ">
+					<div class="container">
+						<h2 class="class-cards__title">Stages<h2>
+						<p class="class-cards__desc">We offer tution in English, Math and Science from Key satges 1 to 4</p>
+						<div class="class-cards__container row" >
+							<div class="class-cards__card class-cards__card--primary col-sm">
+								<img src="assets/images/child.jpeg" alt="">
+								<a><h4 class="card-title">KS1-KS3</h4></a>
+							</div>
+							<div class="class-cards__card class-cards__card--sats col-sm">
+								<img src="assets/images/liban.jpg" alt="">
+								<a><h4 class="card-title">SATS</h4></a>
+							</div>
+							<div class="class-cards__card class-cards__card--gcse col-sm">
+								<img src="assets/images/child.jpeg" alt="">
+								<a><h4 class="card-title">GCSE</h4></a>
+							</div>
+							<div class="class-cards__card class-cards__card--alevel col-sm">
+								<img src="assets/images/child.jpeg" alt="">
+								<a><h4 class="card-title">A-levels</h4></a>
+							</div>
 						</div>
 					</div>
 				</section>
-
 				<section class="testimonials">
-					<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-					  <div class="carousel-inner">
-					    <div class="carousel-item active" data-interval="10000">
-					      <p>“Congratulations Farhana on your amazing results. We are incredibly proud of you!  We would like to thank the teachers and the staff at LEC, for their unwavering support.”</p>
-					    </div>
-					    <div class="carousel-item" data-interval="2000">
-						      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos voluptas enim commodi tenetur. Eveniet et qui asperiores, aliquam ipsa, incidunt perferendis voluptate, enim assumenda commodi sint magni nemo itaque pariatur.</p>
-					    </div>
-					    <div class="carousel-item">
-					      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ab corporis debitis ratione magni quaerat, incidunt veniam dignissimos dolor facere ex nostrum, fugit repellendus similique praesentium asperiores aliquam maiores laborum temporibus? Enim laudantium consequuntur, nulla quasi eos at reiciendis, aspernatur, optio ex praesentium asperiores dolores, odio. Velit officia vitae, mollitia.</p>
-					    </div>
-					  </div>
-					  <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					    <span class="sr-only">Previous</span>
-					  </a>
-					  <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-					    <span class="sr-only">Next</span>
-					  </a>
-					</div>
-				</section>
+					
+					<div class="row">
+							<div class="col-md-8 col-center m-auto">
+								<h2>What <b>Parents</b> say</h2>
+								<div id="myCarousel" class="testimonals-carousel carousel slide" data-ride="carousel">
+									<!-- Carousel indicators -->
+									<ol class="carousel-indicators testimonals-carousel-indicators">
+										<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+										<li data-target="#myCarousel" data-slide-to="1"></li>
+										<li data-target="#myCarousel" data-slide-to="2"></li>
+									</ol>   
+									<!-- Wrapper for carousel items -->
+									<div class="carousel-inner">
+										<div class="testimonals-carousel-item item carousel-item active">
+											
+											<p class="testimonial"><i class="fas fa-quote-left fas--pink"></i>   Congratulations Farhana on your amazing results. We are incredibly proud of you!  We would like to thank the teachers and the staff at LEC, for their unwavering support.  <i class="fas fa-quote-right fas--pink"></i></p>
+											<div class="img-box"><img src="/examples/images/clients/1.jpg" alt=""></div>
+											<p class="overview"><b>Mr. Islam</b>, Farhana's Father</p>
+										</div>
+										<div class="item carousel-item testimonals-carousel-item">
+											<p class="testimonial"><i class="fas fa-quote-left fas--pink"></i>  Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio.  <i class="fas fa-quote-right fas--pink"></i></p>
+											<div class="img-box"><img src="/examples/images/clients/2.jpg" alt=""></div>
+											<p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
+										</div>
+										<div class="item carousel-item testimonals-carousel-item">
+											<p class="testimonial"><i class="fas fa-quote-left fas--pink"></i>  Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.  <i class="fas fa-quote-right fas--pink"></i></p>
+											<div class="img-box"><img src="/examples/images/clients/3.jpg" alt=""></div>
+											<p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+										</div>
+									</div>
+									<!-- Carousel controls -->
+									<a class="testimonals-carousel-control carousel-control left testimonals-carousel-control-prev carousel-control-prev" href="#myCarousel" data-slide="prev">
+										<i class="fa fa-angle-left"></i>
+									</a>
+									<a class="testimonals-carousel-control carousel-control right testimonals-carousel-control-next carousel-control-next" href="#myCarousel" data-slide="next">
+										<i class="fa fa-angle-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
 
-				<div class="cta">
-					<h3>Ready to take you child to the next level?</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis odit blanditiis culpa cum, sint tenetur dolorum accusantium libero et harum.</p>
-					<button class="btn btn--white">Book your Free assessment </button>
+				</section>
+				<div class="container-cta">
+						<div class="container">
+							<div class="cta">
+								<h3>Ready to take you child to the next level?</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis odit blanditiis culpa cum, sint tenetur dolorum accusantium libero et harum.</p>
+								<button class="btn btn-light btn--white">Book your Free assessment </button>
+							</div>
+						</div>
 				</div>
+				<div class="container">
+					<section class="blog-events row">
+						<div class="blog-section col-sm">
+							<h2 class="blog-section-title">Lastest News</h2>
+							<div class="blog-section__item">
+								<h3 class="blog-title">Blog Post</h3>
+								<p class="blog-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+								<a href=""></a>
+							</div>
+							<div class="blog-section__item">
+								<h3 class="blog-title">Blog Post</h3>
+								<p class="blog-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+								<a href=""></a>
+							</div>
+							<div class="blog-section__item">
+								<h3 class="blog-title">Blog Post</h3>
+								<p class="blog-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+								<a href=""></a>
+							</div>
+							<button class="btn btn-default ">See all Blog Posts</button>
+						</div>
+						<div class="event-section col-sm">
+							<h2 class="event-section-title">Upcoming Events</h2>
+							<div class="event-section__item">
+								<div class="event-section__item__date">
+									<p class="date">25</p>
+									<p class="month">MAR</p>
+								</div>
+								<div class="event-section__item__content">
+									<h3 class="event-title">ASPIRE Annual Event </h3>
+									<p class="event-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="">learn more</a>.</p>
+								</div>
+							</div>
+							<div class="event-section__item">
+								<div class="event-section__item__date">
+									<p class="date">54</p>
+									<p class="month">Jan</p>
+								</div>
+								<div class="event-section__item__content">
+									<h3 class="event-title">Coffee Morning</h3>
+									<p class="event-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="">learn more</a></p>
 
-				<section class="blog-events">
-					<div class="blog-section">
-						<div class="blog-section__item">
-							<h3 class="blog-title">Blog Post</h3>
-							<p class="blog-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore iure consequatur facilis numquam, quo corporis nostrum non porro quam recusandae.</p>
-							<a href=""></a>
-						</div>
-						<div class="blog-section__item">
-							<h3 class="blog-title">Blog Post</h3>
-							<p class="blog-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, a at doloribus, ratione quis totam sint culpa sequi cupiditate eos.</p>
-							<a href=""></a>
-						</div>
-						<div class="blog-section__item">
-							<h3 class="blog-title">Blog Post</h3>
-							<p class="blog-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam aliquam, magni quia similique tenetur sed. Nobis tenetur fuga ex esse!</p>
-							<a href=""></a>
-						</div>
-						<button class="btn btn-default">See all Blog Posts</button>
-					</div>
-					<div class="event-section">
-						<div class="event-section__item">
-							<div class="event-section__item">
-								<p class="date">25</p>
-								<p class="month">MAR</p>
+								</div>
 							</div>
-							<h3 class="event-title">ASPIRE Annual Event </h3>
-							<p class="event-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis perspiciatis, repellendus deserunt minus debitis perferendis dolorum quaerat eaque facere voluptatibus<a href="">learn more</a>.</p>
-							
-						</div>
-						<div class="event-section__item">
 							<div class="event-section__item">
-								<p class="date">54</p>
-								<p class="month">Jan</p>
+								<div class="event-section__item__date">
+									<p class="date">10</p>
+									<p class="month">OCT</p>
+								</div>
+								<div class="event-section__item__content">
+									<h3 class="event-title">Football Fun</h3>
+									<p class="event-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="">learn more</a></p>
+								</div>
 							</div>
-							<h3 class="event-title">Coffee Morning</h3>
-							<p class="event-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, odit! Molestiae vero unde eius, eum reprehenderit iure perspiciatis. Fugiat, necessitatibus!<a href="">learn more</a></p>
-							<a href="">learn more</a>
+							<button class="btn btn-default">See all Events</button>
 						</div>
-						<div class="event-section__item">
-							<div class="event-section__item">
-								<p class="date">10</p>
-								<p class="month">OCT</p>
-							</div>
-							<h3 class="event-title">Football Fun</h3>
-							<p class="event-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae architecto corporis sit eaque molestiae, repellendus quibusdam dolorum veniam dolor. Eum.<a href="">learn more</a></p>
-						</div>
-						<button class="btn btn-default">See all Events</button>
-					</div>
-				</section>
+					</section>
+				</div>
 			</main>
 			<footer>
-				<div class="logo-area">
-					<img src="assets/images/logo.png">
-				</div>
-				<div class="contact-info">
-					<h4>Get in touch</h4>
-					<div class="contact-info__item">
-						<i class="fas fa-phone"></i>
-						<p></p>
-					</div>
-					<div class="socials">
-						<h4>Follow us on Socials</h4>
-						<div class="socials__item">
-							<i class="fab fa-facebook-square"></i>
-							<i class="fab fa-instagram"></i>
-							<i class="fab fa-twitter-square"></i>
-							<i class="fab fa-flickr"></i>
+				<div class="container">
+						<div class="footer__item logo-area">
+							<img id='footer_logo' src="assets/images/logo.png" width="283" height="144">
 						</div>
-					</div>
-					<div class="tution-links">
-						<h4>Tution</h4>
-						<ul>
-							<li>Primary</li>
-							<li>Secondary</li>
-							<li>GCSE</li>
-							<li>A-levels</li>
-						</ul>
-					</div>
-					<div class="quick-links">
-						<h4>Quick Links</h4>
-						<ul>
-							<li>About Us</li>
-							<li>Events</li>
-							<li>Careers</li>
-							<li>Privacy Policy</li>
-						</ul>
-					</div>
+						<div class="footer__item contact-info">
+							<h4>Get in touch</h4>
+							<div class="">
+								<ul>
+									<li class="contact-info__item"><a href="tel:03394857837"><i class="fas fas--pink fa-phone"></i><span class="number"> 03394857837</span></a></li>
+									<li class="contact-info__item"><a href="mailto:info@leceducation.co.uk"><i class="fas fas--pink fa-envelope"></i> <span class="email">info@leceducation.co.uk</span></a></li>
+									<li class="contact-info__item"><i class="fas fa-map-marker-alt fas--pink"></i> <span class="address">First Floor,<br> 119 New Road,<br> Whitechapel,<br> London,<br> E1 1HJ</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer__item socials">
+							<h4>Follow us on Socials</h4>
+							<div class="socials__item">
+								<i class="fab fa-facebook-square"></i>
+								<i class="fab fa-instagram"></i>
+								<i class="fab fa-twitter-square"></i>
+								<i class="fab fa-flickr"></i>
+							</div>
+						</div>
+						<div class=" footer__item tution-links">
+							<h4>Tution</h4>
+							<ul>
+								<li><a href="#">Primary</a></li>
+								<li><a href="#">Secondary</a></li>
+								<li><a href="#">GCSE</a></li>
+								<li><a href="#">A-levels</a></li>
+							</ul>
+						</div>
+						<div class="footer__item quick-links">
+							<h4>Quick Links</h4>
+							<ul>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Events</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+
 				</div>
 			</footer>
 		</div>
@@ -261,10 +315,20 @@
 
 
 
-
-	<script type="text/javascript" src="app.js"></script>
+	<!-- Bootstrap scripts -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- ScrollMagic Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+   	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
+	<!-- main JS file -->
+	<script type="text/javascript" src="assets/js/app.js"></script>
+
 </body>
 </html>
